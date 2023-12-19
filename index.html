@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="topbar-container">
+            <div id="topbar">
+                <div id="topbar-1">
+                    <h1><img src="assets/heart-light.png" alt="heart">Pet Shelter</h1>
+                    <div id="nav">
+                        <ul>
+                            <li>Find a Pet</li>
+                            <li>About</li>
+                            <li><button id="donateButton" onclick="kill(this)">Donate</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="topbar-2">
+                    <div id="petSelector">
+                        <p>I'm looking for a...</p>
+                        <div class="center">
+                            <img src="assets/paw-light.png" alt="paw">
+                            <select name="petType" id="petType" onchange="petAlert(this)">
+                                <option>Any Pet</option>
+                                <option>Dog</option>
+                                <option>Cat</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="locationSelector">
+                        <p>in or near...</p>
+                        <div class="center">
+                            <img src="assets/pin-light.png" alt="map pointer">
+                            <input type="text" placeholder="City or Zip Code">
+                        </div>
+                    </div>
+                    <div id="petSearch" class="center">
+                        <button>Find your new best friend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="row" >
+                <div class="row-1"><img src="assets/pepper.jpg" alt="pet image"></div>
+                <div class="row-2">
+                    <h1>Pepper</h1>
+                    <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                </div>
+                <div class="row-3">
+                    <p id="Pepper">3 petting(s)</p>
+                    <button onclick="pet(this)">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="row-1"><img src="assets/bruce.jpg" alt="pet image"></div>
+                <div class="row-2">
+                    <h1>Bruce</h1>
+                    <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                </div>
+                <div class="row-3">
+                    <p id="Bruce">5 petting(s)</p>
+                    <button onclick="pet(this)">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="row-1"><img src="assets/oscar.jpg" alt="pet image"></div>
+                <div class="row-2">
+                    <h1>Oscar</h1>
+                    <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                </div>
+                <div class="row-3">
+                    <p id="Oscar">8 petting(s)</p>
+                    <button onclick="pet(this)">Pet Oscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
